@@ -3,27 +3,25 @@ import javax.swing.JOptionPane;
 public class Exercicio02 {
     public static void main(String[] args) {
         // Enunciado: Reimplemente o exercício 1, fazendo com que os valores sejam exibidos em ordem reversa.
-        String output = "Primeiros 100 números naturais em ordem decrescente:\n";
-
-        // Usando for
-        for (int i = 99; i >= 0; i--) {
-            output += i + " ";
+        
+        String resultado = "";
+        
+        for(int i = 9; i >= 0; i--){ //i = i - 1
+            resultado += i + "\n";
         }
-
-        // Usando while
-        /*int i = 99;
-        while(i >= 0){
-          output += i + " ";
-          i--;
+        
+        /*int i = 9;
+        while (i >= 0) {
+            resultado += i + "\n";
+            i--;
         }*/
 
-        // Usando do while
-        /*int i = 99;
+        /*int i = 9;
         do{
-          output += i + " ";
-          i--;
-        }(while i >= 0)*/
+            resultado += i + "\n";
+            i--; 
+        }while(i >= 0);*/
 
-        JOptionPane.showMessageDialog(null, output);
+        JOptionPane.showMessageDialog(null, "Os primeiros 10 números naturais são:\n" + resultado);
     }
 }
